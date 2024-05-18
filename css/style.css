@@ -62,8 +62,8 @@ body {
 }
 
 .navbar a:hover {
-    border-bottom: 2.5px solid #ededed;
-    border-radius: 15px;
+    /* border-bottom: 2.5px solid #ededed; */
+    /* border-radius: 15px; */
     transform: scale(0) translateY(50px);
     transition: .5s;
 }
