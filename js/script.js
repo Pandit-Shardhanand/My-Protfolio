@@ -38,8 +38,8 @@ window.onscroll = () => {
     document.getElementById("hire").addEventListener("click", function() {
         const recipient = "panditshadh@gmail.com";
         const subject = "Job Opportunity";
-        const body = "Hi Shardhanand,\n\nI'm interested in discussing a job opportunity with you. Please let me know if you're available to talk.";
-        const mailtoUrl = "mailto:" + encodeURIComponent(recipient) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        const body = "Hi Shardhanand,\n\nI'm interested in discussing a job opportunity with you. \nPlease let me know if you're available to talk.";
+        const mailtoUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
     });
 
