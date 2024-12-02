@@ -224,25 +224,6 @@ section {
 .home-sci a:hover::before{
     width: 100%;
 }
-/* .home-img{
-    position: absolute;
-    top: 70px;
-    right: 40px;
-}
-
-.home-imgHover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background: transparent;
-    transition: .3s;
-}
-.home-imgHover:hover{
-    background: var(--bg-color);
-    opacity: .8;
-} */
 
 .home-img .img-box{
     position: relative;
@@ -636,4 +617,58 @@ span{
 }
 .footer-iconTop a:hover i{
     color: var(--main-color);
+}
+
+/* Breakpoints */
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:992px) {
+    header{
+        padding: 2rem 4%;
+    }
+    secttion{
+        padding: 10rem 4% 2rem;
+    }
+}
+@media screen and (max-width:810px) {
+    .contact .input-field{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        text-align: center;
+        display: none;
+    }
+    nav.active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        margin: 4rem 0;
+    }
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .home-img .img-box{
+        width: 35rem;
+        height: 35rem;
+    }
 }
